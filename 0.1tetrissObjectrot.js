@@ -13,6 +13,7 @@ for(let i = 1 ; i <= 2 ; i=i+1) {//triangulo (2*1)/2
     for(j = 1 ; j<= i ; j=j+1) {         
         tetrisS =tetrisS + caracter ;
     }
+    tetrisS = tetrisS + espacio; 
     tetrisS = tetrisS + "\n"; 
 }
 //fila 3
@@ -21,10 +22,9 @@ for(let i = 1 ; i <= 2 ; i=i+1) {//triangulo (2*1)/2
              tetrisS = tetrisS + caracter; 
             }
             //right space
-        for(j = 1 ; j<= i ; j=j+1) {   
+        for(j = 0 ; j<= i ; j=j+1) {   
             tetrisS = tetrisS + espacio ;
         }
     }
 
 console.log(tetrisS);
-
