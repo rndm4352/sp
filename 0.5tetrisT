@@ -1,0 +1,21 @@
+//TETRIS T
+const filas = 2;
+const columnas = 3;
+const tetris_T = [];
+
+const caracter = "[_]";
+const espacio = " ";
+
+for (let i=0; i<filas;i++){
+    tetris_T[i]=[];
+    for (let j=0;j<columnas;j++){
+        if(i == 0 || j==1 ){
+            tetris_T[i][j]=caracter
+        }
+        else {tetris_T[i][j]=espacio;
+        
+        }
+    }
+}
+
+console.log(tetris_T);
